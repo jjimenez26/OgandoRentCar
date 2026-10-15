@@ -1,0 +1,193 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section class="hero">
+    <div class="container hero-content">
+        <h1>Ogando RentCar</h1>
+        <h3>Alquila el vehículo perfecto</h3>
+
+        <p>
+            Vehículos modernos, cómodos y seguros para todo tipo de viajes.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#vehiculos" class="btn-gold">
+                Ver Vehículos
+            </a>
+
+            <a href="#contacto" class="btn-outline">
+                Reservar Ahora
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="vehiculos" class="vehicles">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Vehículos Destacados
+        </h2>
+
+        <div class="cars-grid">
+
+          
+
+          <!--- <div class="car-card">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800" alt="">
+                <div class="card-body">
+                    <h3>Honda CR-V</h3>
+                    <p>RD$4,000 por día</p>
+                    <button>Reservar</button>
+                </div>
+            </div>-->
+          
+    <div class="car-gallery">
+
+        <img id="main-crv"
+             class="main-image"
+             src="~/imagenes/Honda CRV1.jpg"
+             alt="Honda CRV">
+
+        <div class="thumbnails">
+
+            <img src="~/imagenes/Honda CRV1.jpg"
+                 onclick="changeImage('main-crv', this.src)"
+                 alt="CRV">
+
+            <img src="~/imagenes/Honda CRV2.jpg"
+                 onclick="changeImage('main-crv', this.src)"
+                 alt="CRV">
+
+            <img src="~/imagenes/Honda CRV3.jpg"
+                 onclick="changeImage('main-crv', this.src)"
+                 alt="CRV">
+
+             <img src="~/imagenes/Honda CRV4.jpg"
+                  onclick="changeImage('main-crv', this.src)"
+                  alt="CRV">
+        </div>
+
+    
+
+    <div class="card-body">
+
+     <h3>🚨 ¡𝗛𝗢𝗡𝗗𝗔 𝗖𝗥-𝗩 𝟮𝟬𝟮𝟰 𝗗𝗜𝗦𝗣𝗢𝗡𝗜𝗕𝗟𝗘 𝗔𝗛𝗢𝗥𝗔! 🚨</h3>
+
+        <p>Automática • 5 pasajeros</p>
+
+        <p class="price">
+            RD$4,500 / día
+        </p>
+
+        <a href="#" class="btn-reserve">
+            Reservar
+        </a>
+
+    </div>
+    </div>
+            <div class="car-gallery">
+
+                <img id="main-Rav41"
+                     class="main-image"
+                     src="~/imagenes/Rav41.jpg"
+                     alt="Toyota RAV4">
+
+                <div class="thumbnails">
+
+                    <img src="~/imagenes/Rav41.jpg"
+                         onclick="changeImage('main-Rav41', this.src)"
+                         alt="RAV4">
+
+                    <img src="~/imagenes/Rav42.jpg"
+                         onclick="changeImage('main-Rav41', this.src)"
+                         alt="RAV4">
+
+                    <img src="~/imagenes/Rav43.jpg"
+                         onclick="changeImage('main-Rav41', this.src)"
+                         alt="RAV4">
+
+                    <img src="~/imagenes/Rav44.jpg"
+                         onclick="changeImage('main-Rav41', this.src)"
+                         alt="RAV4">
+                   
+                </div>
+
+
+
+                <div class="card-body">
+
+                    <h3>🚨 ¡𝗧𝗢𝗬𝗢𝗧𝗔 𝗥𝗔𝗩𝟰 𝟮𝟬𝟮𝟬 𝗗𝗜𝗦𝗣𝗢𝗡𝗜𝗕𝗟𝗘 𝗔𝗛𝗢𝗥𝗔! 🚨</h3>
+
+                    <p>Automática • 5 pasajeros</p>
+
+                    <p class="price">
+                        RD$4,500 / día
+                    </p>
+
+                    <a href="#" class="btn-reserve">
+                        Reservar
+                    </a>
+
+                </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="benefits">
+
+    <div class="container">
+
+        <h2>¿Por qué elegirnos?</h2>
+
+        <div class="benefits-grid">
+
+            <div class="benefit">
+                ✅ Seguro incluido
+            </div>
+
+            <div class="benefit">
+                ✅ Asistencia 24/7
+            </div>
+
+            <div class="benefit">
+                ✅ Entrega rápida
+            </div>
+
+            <div class="benefit">
+                ✅ Precios competitivos
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contacto" class="contact">
+
+    <div class="container">
+
+        <h2>Contáctanos</h2>
+
+        <p>📱 WhatsApp: +1 809-000-0000</p>
+
+        <p>📧 rentcar@gmail.com</p>
+
+    </div>
+
+</section>
+<footer class="border-top footer text-muted">
+    <div class="container">
+        <br />
+        &copy; 2026 - OgandoRentCar - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+
+</footer>
